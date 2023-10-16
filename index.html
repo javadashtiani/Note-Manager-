@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="note-box-wrapper">
+      <div class="wrapper">
+        <!-- Click to create note box -->
+        <div class="create-note">
+          <h3 class="create-title">Create Note</h3>
+          <span class="add-note-create-btn"
+            ><i class="bi bi-plus-square-dotted"></i
+          ></span>
+        </div>
+        <!-- Add New Note -->
+        <!-- <div class="new-note">
+          <div class="new-note-header">
+            <h3 class="create-title">Learn JS</h3>
+          </div>
+          <div class="new-note-content">I am learning Js</div>
+          <div class="new-note-footer">
+            <span class="note-date"> April,12,2022</span>
+            <span class="note-options">
+              <i class="bi bi-three-dots"></i>
+              <div class="options-box">
+                    <i class="bi bi-trash"></i>
+                    <span>Delete</span>
+              </div>
+            </span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Add Text to create note -->
+    <div class="box-create-note">
+      <div class="box-create-note__wrapper">
+        <div class="box-create-note__title">
+          <h4>Add New Note</h4>
+          <span class="close-create-note-box__btn"
+            ><i class="bi bi-x-lg"></i
+          ></span>
+        </div>
+        <!-- Input title -->
+        <div class="form">
+          <div class="input-title">
+            <label for="input">Title</label>
+            <input type="text" name="name" id="input" />
+          </div>
+          <div class="desc">
+            <label for="desc">Description</label>
+            <textarea name="desc" id="desc" cols="20" rows="10"></textarea>
+          </div>
+          <button class="add-note-btn">Add</button>
+        </div>
+      </div>
+    </div>
+    <!-- Show alert when every body dont fill the fields -->
+    <div class="alert-box">
+      <span class="close-alert-btn"><i class="bi bi-x-lg"></i></span>
+      <h4>Please fill the fields!!!</h4>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
